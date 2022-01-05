@@ -30,5 +30,27 @@
     </div>
 </section>
 
+<section class="projects_section">
+    <div class="container">
+        <h3 style="text-align:center;">Some of my past projects</h3>
+        <div class="row justify-content-lg-start justify-content-center">
+            {% for project in projects%}
+            <div class="col-lg-2 col-md-3">
+                <div class="card-deck">
+                    <img class="card-img-top mb-2" src="{{ project.screenshot.url }}" alt="{{screenshot.title}}">
+                    <div class="">
+                        <h4 class="card-title" style="color: rgb(233, 109, 109)">{{project.title|title}}</h4>
+                        <a class="btn btn-sm btn-outline-info" href="{{ project.site_url }}"> Visit Site</a>
+                        <p><em>{{project.description}}</em></p>
+                        <hr>
+                        <p class="card-text"><strong>{{project.languages|title}}</strong></p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
 
 {% endblock %}
