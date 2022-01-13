@@ -1,5 +1,6 @@
 {%extends 'base.html'%}
 {% load bootstrap4 %}
+{% load static %}
 {% block content %}
 
 <section class="my-5">
@@ -12,12 +13,11 @@
                         <h1 class="text-uppercase">I am Ng'etich Gideon</h1>
                         <h4 class="text-uppercase">a web developer</h4>
                         <div class="social">
-                            <a href="https://github.com/Kipkorir-Gideon"  target="_blank"><i class ="ti-github"></i>Github</a>
-                            <a href="https://twitter.com/gidalios" target="_blank"><i class ="ti-twitter"></i>Twitter</a>
-                            <a href="mailto:ngetichgideon21@gmail.com" target="_blank"><i class ="ti-mailto"></i>Mail</a>
-                            <a href="https://www.linkedin.com/in/ngetich-gideon-218661122/" target="_blank"><i class ="ti-linkedin"></i>LinkedIn</a>
+                            <a href="https://github.com/Kipkorir-Gideon"  target="_blank"><i class="bi bi-github"></i></a>
+                            <a href="https://twitter.com/gidalios" target="_blank"><i class="bi bi-twitter"></i></a>
+                            <a href="mailto:ngetichgideon21@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/ngetich-gideon-218661122/" target="_blank"><i class="bi bi-linkedin"></i></a>
                         </div>
-                        <a href="https://github.com/Kipkorir-Gideon" class="btn btn-outline-primary"><span>Github</span></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -55,9 +55,49 @@
 
 <section class="aboutme my-5">
     <div class="container">
-        <h3 class="text-center">About Me</h3>
-        <div class="row">
+        <div class="row align-items-center justify-content-start">
+            <div class="col-lg-5">
+                <div class="about_img">
+                    <img src="/static/images/undraw_web_developer_re_h7ie.svg" height="400" width="400"alt="about">
+                </div>
+            </div>
+            <div class="offset-lg-1 col-lg-5">
+                <div class="main_title text-left">
+                    <p class="text-center">About Me</p>
+                    <h2>Software Developer</h2>
+                    <p>
+                        Junior level Web Development candidate with less than one year of experience. Skilled in HTML, CSS, JavaScript, Python, and SQL. Proven
+                        ability to solve technical challenges and develop high-quality solutions. A fast learner with a desire to learn and continually improve. Seeking
+                        a position as a Full-stack Developer at an innovative software company.
+                    </p>
+                    <a href="#"><span>Download Cv</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+
+<section class="more">
+    <div class="container">
+        <div class="about-wrapper">
+            <div class="about-me">
+                <h4>More About me</h4>
+                <p>I build projects just to tickle my brain.</p>
+                <p>I take interviews i search for a great team & projects that interest me.</p>
+                <hr>
+                <h4>Top Expertise</h4>
+                <p>Fullstack developer with primary focus on Django and Angular.</p>
+                <div class="skills">
+                    <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>Javascript</li>
+                        <li>Angular</li>
+                        <li>Postgres</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -67,7 +107,21 @@
     <div class="container">
         <h3 class="text-center">Contact Me</h3>
         <div class="row">
-            
+            <form action="" id="contact-form">
+                <label for="">Name</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="">
+
+                <label for="">Subject</label>
+                <input type="text" name="subject" class="form-control" id="subject" placeholder="">
+
+                <label for="">Email</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="">
+
+                <label for="">Message</label>
+                <textarea name="message" id="" cols="30" rows="10" class="form-control" id="message" placeholder=""></textarea>
+
+                <input type="submit" id="submit" name="submit" value="Send">
+            </form>
         </div>
     </div>
 </section>
