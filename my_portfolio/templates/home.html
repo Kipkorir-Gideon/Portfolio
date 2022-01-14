@@ -22,7 +22,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="image">
-                        <img src="https://avatars.githubusercontent.com/u/87479324?v=4" alt="photo">
+                        <img src="https://avatars.githubusercontent.com/u/87479324?v=4" alt="photo" style="border-radius: 5px;">
                     </div>
                 </div>
             </div>
@@ -37,16 +37,35 @@
             {% for project in projects%}
             <div class="col-lg-4 col-md-3">
                 <div class="card-deck mx-1 my-4">
+                    <a href="" data-toggle="modal" data-target="#project{{ project.id }}">
                     <img class="card-img-top mb-2" src="{{ project.screenshot.url }}" alt="{{screenshot.title}}">
-                    <div class="">
-                        <h4 class="card-title" style="color: rgb(233, 109, 109)">{{project.title|title}}</h4>
-                        <a class="btn btn-sm btn-outline-info" href="{{ project.site_url }}"> Visit Site</a>
-                        <p><em>{{project.description}}</em></p>
-                        <hr>
-                        <p class="card-text"><strong>{{project.languages|title}}</strong></p>
+                    </a>
+                </div>
+            </div>
+
+            <!--modal -->
+            <div class="modal fade" id="project{{ project.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="card-title" style="color: rgb(233, 109, 109)">{{project.title|title}}</h4>
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="">
+                                <img class="card-img-top mb-2" src="{{ project.screenshot.url }}" alt="{{screenshot.title}}">
+                                <p><em>{{project.description}}</em></p>
+                                <p class="card-text"><strong>{{project.languages|title}}</strong></p>
+                                <a class="btn btn-sm btn-outline-info" href="{{ project.site_url }}"> Visit Site</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
+
             {% endfor %}
         </div>
     </div>
@@ -70,7 +89,7 @@
                         ability to solve technical challenges and develop high-quality solutions. A fast learner with a desire to learn and continually improve. Seeking
                         a position as a Full-stack Developer at an innovative software company.
                     </p>
-                    <a href="#"><span>Download Cv</span></a>
+                    <a href="#"><span>Download Resume</span></a>
                 </div>
             </div>
         </div>
