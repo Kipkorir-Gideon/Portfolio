@@ -3,147 +3,154 @@
 {% load static %}
 {% block content %}
 
-<section class="my-5">
-    <div class="banner_inner">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-6">
-                    <div class="banner_content">
-                        <h3>Hey there!</h3>
-                        <h1 class="text-uppercase">I am Ng'etich Gideon</h1>
-                        <h4 class="text-uppercase">a web developer</h4>
-                        <div class="social">
-                            <a href="https://github.com/Kipkorir-Gideon"  target="_blank"><i class="bi bi-github"></i></a>
-                            <a href="https://twitter.com/gidalios" target="_blank"><i class="bi bi-twitter"></i></a>
-                            <a href="mailto:ngetichgideon21@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
-                            <a href="https://www.linkedin.com/in/ngetich-gideon-218661122/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="image">
-                        <img src="https://avatars.githubusercontent.com/u/87479324?v=4" alt="photo" style="border-radius: 5px;">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<div class="container-fluid bg-dark text-light">
 
-<section class="projects_section my-5">
-    <div class="container">
-        <h3 style="text-align:center;">Some of my past projects</h3>
-        <div class="row justify-content-lg-start justify-content-center">
-            {% for project in projects%}
-            <div class="col-lg-4 col-md-3">
-                <div class="card-deck mx-1 my-4">
-                    <a href="" data-toggle="modal" data-target="#project{{ project.id }}">
-                    <img class="card-img-top mb-2" src="{{ project.screenshot.url }}" alt="{{screenshot.title}}">
-                    </a>
-                </div>
-            </div>
-
-            <!--modal -->
-            <div class="modal fade" id="project{{ project.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="card-title" style="color: rgb(233, 109, 109)">{{project.title|title}}</h4>
-                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="">
-                                <img class="card-img-top mb-2" src="{{ project.screenshot.url }}" alt="{{screenshot.title}}">
-                                <p><em>{{project.description}}</em></p>
-                                <p class="card-text"><strong>{{project.languages|title}}</strong></p>
-                                <a class="btn btn-sm btn-outline-info" href="{{ project.site_url }}"> Visit Site</a>
+    <section class="py-5">
+        <div class="banner_inner">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="banner_content">
+                            <h3>Hey there!</h3>
+                            <h1 class="text-uppercase">I am Ng'etich Gideon</h1>
+                            <h4 class="text-uppercase">a web developer</h4>
+                            <div class="social">
+                                <a href="https://github.com/Kipkorir-Gideon"  target="_blank"><i class="bi bi-github p-2"></i></a>
+                                <a href="https://twitter.com/gidalios" target="_blank"><i class="bi bi-twitter p-2"></i></a>
+                                <a href="mailto:ngetichgideon21@gmail.com" target="_blank"><i class="bi bi-envelope p-2"></i></a>
+                                <a href="https://www.linkedin.com/in/ngetich-gideon-218661122/" target="_blank"><i class="bi bi-linkedin p-2"></i></a>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="image">
+                            <img src="https://avatars.githubusercontent.com/u/87479324?v=4" alt="photo" style="border-radius: 5px;">
                         </div>
                     </div>
                 </div>
             </div>
-
-            {% endfor %}
         </div>
-    </div>
-</section>
+    </section>
 
-
-<section class="aboutme my-5">
-    <div class="container">
-        <div class="row align-items-center justify-content-start">
-            <div class="col-lg-5">
-                <div class="about_img">
-                    <img src="/static/images/undraw_web_developer_re_h7ie.svg" height="400" width="400"alt="about">
+    <hr class="bg-primary">
+    
+    <section class="projects_section py-5">
+        <div class="container">
+            <h3 style="text-align:center;">Some of my past projects</h3>
+            <div class="row justify-content-lg-start justify-content-center">
+                {% for project in projects%}
+                <div class="col-lg-6 col-md-6">
+                    <div class="card-deck mx-1 my-4">
+                        <a href="" data-toggle="modal" data-target="#project{{ project.id }}">
+                        <img class="card-img-top mb-2" src="{{ project.screenshot.url }}" alt="{{screenshot.title}}" height="400">
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="offset-lg-1 col-lg-5">
-                <div class="main_title text-left">
-                    <p class="text-center">About Me</p>
-                    <h2>Software Developer</h2>
-                    <p>
-                        Junior level Web Development candidate with less than one year of experience. Skilled in HTML, CSS, JavaScript, Python, and SQL. Proven
-                        ability to solve technical challenges and develop high-quality solutions. A fast learner with a desire to learn and continually improve. Seeking
-                        a position as a Full-stack Developer at an innovative software company.
-                    </p>
-                    <a href="#"><span>Download Resume</span></a>
+    
+                <!--modal -->
+                <div class="modal fade" id="project{{ project.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="card-title" align="center" style="color: rgb(233, 109, 109)">{{project.title|title}}</h4>
+                                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="">
+                                    <img class="card-img-top mb-2" src="{{ project.screenshot.url }}" alt="{{screenshot.title}}">
+                                    <p><em>{{project.description}}</em></p>
+                                    <p class="card-text"><strong>{{project.languages|title}}</strong></p>
+                                    <a class="btn btn-sm btn-outline-info" href="{{ project.site_url }}" style="width: 100%;"> Visit Site</a>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="more">
-    <div class="container">
-        <div class="about-wrapper">
-            <div class="about-me">
-                <h4>More About me</h4>
-                <p>I build projects just to tickle my brain.</p>
-                <p>I take interviews i search for a great team & projects that interest me.</p>
-                <hr>
-                <h4>Top Expertise</h4>
-                <p>Fullstack developer with primary focus on Django and Angular.</p>
-                <div class="skills">
-                    <ul>
-                        <li>Python</li>
-                        <li>Django</li>
-                        <li>Javascript</li>
-                        <li>Angular</li>
-                        <li>Postgres</li>
-                    </ul>
-                </div>
+    
+                {% endfor %}
             </div>
         </div>
-    </div>
-</section>
-
-
-<section class="contact my-5">
-    <div class="container">
-        <h3 class="text-center">Contact Me</h3>
-        <div class="row">
-            <form action="" id="contact-form">
-                <label for="">Name</label>
-                <input type="text" name="name" class="form-control" id="name" placeholder="">
-
-                <label for="">Subject</label>
-                <input type="text" name="subject" class="form-control" id="subject" placeholder="">
-
-                <label for="">Email</label>
-                <input type="email" name="email" class="form-control" id="email" placeholder="">
-
-                <label for="">Message</label>
-                <textarea name="message" id="" cols="30" rows="10" class="form-control" id="message" placeholder=""></textarea>
-
-                <input type="submit" id="submit" name="submit" value="Send">
-            </form>
+    </section>
+    
+    
+    <section class="aboutme my-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-start">
+                <div class="col-lg-5">
+                    <div class="about_img">
+                        <img src="/static/images/undraw_web_developer_re_h7ie.svg" height="400" width="400"alt="about">
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-5">
+                    <div class="main_title text-left">
+                        <p class="text-center">About Me</p>
+                        <h2>Software Developer</h2>
+                        <p>
+                            Junior level Web Development candidate with less than one year of experience. Skilled in HTML, CSS, JavaScript, Python, and SQL. Proven
+                            ability to solve technical challenges and develop high-quality solutions. A fast learner with a desire to learn and continually improve. Seeking
+                            a position as a Full-stack Developer at an innovative software company.
+                        </p>
+                        <a href="#"><span>Download Resume</span></a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+    
+    
+    <section class="more" align="center">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>More About me</h4>
+                    <p>I build projects just to tickle my brain.</p>
+                    <p>I take interviews i search for a great team & projects that interest me.</p>
+                    <hr>
+                    <h4>Top Expertise</h4>
+                    <p>Fullstack developer with primary focus on Django and Angular.</p>
+                    <div class="skills">
+                        <ul>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>Javascript</li>
+                            <li>Angular</li>
+                            <li>Postgres</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="contact my-5">
+        <div class="container">
+            <h3 class="text-center">Contact Me</h3>
+            <div class="row">
+                <form action="" id="contact-form">
+                    <label for="">Name</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your name" required>
+    
+                    <label for="">Subject</label>
+                    <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required>
+    
+                    <label for="">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+    
+                    <label for="">Message</label>
+                    <textarea name="message" id="" cols="30" rows="5" class="form-control" id="message" placeholder="Write your message here..." required></textarea>
+    
+                    <input type="submit" id="submit" name="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+    <br>
+
+</div>
 
 
 {% endblock %}

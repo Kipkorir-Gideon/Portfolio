@@ -1,5 +1,35 @@
+:root {
+    --mainColor: #eaeaea;
+    --secondaryColor:#fff;
+
+    --borderColor: #c1c1c1;
+
+    --mainText:black;
+    --secondaryText:#4b5156;
+
+    --themeDotBorder:#24292e;
+
+    --previewBg:rgb(251, 249, 243, 0.8);
+    --previewShadow:#f0ead6;
+
+    --buttonColor:black;
+}
+
+html, body {
+    padding: 0; 
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Russo One', sans-serif;
+}
+
+body * {
+    transition: 0.3s;
+}
+
+
 a {
     text-decoration: none;
+    color: #17a2b8
 }
 
 
