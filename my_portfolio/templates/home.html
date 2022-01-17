@@ -1,171 +1,184 @@
 <html>
     <body>
         {%extends 'base.html'%}
-{% load bootstrap4 %}
-{% load static %}
-{% block content %}
+        {% load bootstrap4 %}
+        {% load static %}
+        {% block content %}
 
-<div class="container-fluid bg-dark home">
+        <div class="container-fluid bg-dark home">
 
-    <section class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="banner_content">
-                        <h3>Hey there!</h3>
-                        <h1 class="text-uppercase">I am Ng'etich Gideon</h1>
-                        <h4 class="text-uppercase">a web developer</h4>
-                        <div class="social">
-                            <a href="https://github.com/Kipkorir-Gideon"  target="_blank"><i class="bi bi-github p-2"></i></a>
-                            <a href="https://twitter.com/gidalios" target="_blank"><i class="bi bi-twitter p-2"></i></a>
-                            <a href="mailto:ngetichgideon21@gmail.com" target="_blank"><i class="bi bi-envelope p-2"></i></a>
-                            <a href="https://www.linkedin.com/in/ngetich-gideon-218661122/" target="_blank"><i class="bi bi-linkedin p-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="image">
-                        <img src="https://avatars.githubusercontent.com/u/87479324?v=4" alt="photo" style="border-radius: 5px;">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="container">
-        <hr class="bg-primary">
-    </div>
-    
-    
-    <section class="aboutme my-5" id="About">
-        <div class="container">
-            <h3 class="text-center">About Me</h3>
-            <br>
-            <div class="row align-items-center">
-                <div class="col-md-5">
-                    <div class="about_img">
-                        <img src="/static/images/undraw_web_developer_re_h7ie.svg" height="400" width="400"alt="about">
-                    </div>
-                </div>
-                <div class="offset-lg-1 col-md-5">
-                    <div class="main_title text-left">
-                        <h2>Software Developer</h2>
-                        <p>
-                            Junior level Web Development candidate with less than one year of experience. Skilled in HTML, CSS, JavaScript, Python, and SQL. Proven
-                            ability to solve technical challenges and develop high-quality solutions. A fast learner with a desire to learn and continually improve. Seeking
-                            a position as a Full-stack Developer at an innovative software company.
-                        </p>
-                        <a href="#"><span>Download Resume</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    <section class="more" align="center">
-        <div class="container">
-            <div class="about-wrapper">
-                <div class="about-me">
-                    <h4>More About me</h4>
-                    <p>I build projects to improve on my skills and learn new things.</p>
-                    <p>I take interviews in search for a great team & projects that interest me.</p>
-                    <br>
-                    <h4>Top Expertise</h4>
-                    <p>Fullstack developer with primary focus on Django and Angular.</p>
-                    <div class="skills" align="center">
-                        <div class="row" align="center" style="width:50%">
-                            <div class="col">
-                                <ul>
-                                    <li>Python</li>
-                                    <li>Flask</li>
-                                    <li>Django</li>
-                                </ul>
-                            </div>
-                            <div class="col">
-                                <ul>
-                                    <li>Javascript</li>
-                                    <li>Angular</li>
-                                    <li>Postgres</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="projects_section py-5" id="Projects">
-        <div class="container">
-            <h3 style="text-align:center;">Some of my past projects</h3>
-            <div class="row justify-content-lg-start justify-content-center">
-                {% for project in projects%}
-                <div class="col-lg-6 col-md-6">
-                    <div class="card-deck mx-1 my-4">
-                        <a href="" data-toggle="modal" data-target="#project{{ project.id }}">
-                        <img class="card-img-top mb-2" src="{{ project.screenshot.url }}" alt="{{screenshot.title}}" height="400">
-                        </a>
-                    </div>
-                </div>
-    
-                <!--modal -->
-                <div class="modal fade" id="project{{ project.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="card-title" align="center" style="color: rgb(233, 109, 109)">{{project.title|title}}</h4>
-                                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="">
-                                    <img class="card-img-top mb-2" src="{{ project.screenshot.url }}" alt="{{screenshot.title}}">
-                                    <p><em>{{project.description}}</em></p>
-                                    <p class="card-text"><strong>{{project.languages|title}}</strong></p>
-                                    <a class="btn btn-sm btn-outline-info" href="{{ project.site_url }}" style="width: 100%;"> Visit Site</a>
+            <section class="py-5 home1" id="Home">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="banner_content">
+                                <h3>Hey there!</h3>
+                                <h1 class="text-uppercase">I am Ng'etich Gideon</h1>
+                                <h4 class="text-uppercase">a web developer</h4>
+                                <div class="social">
+                                    <a class="social-icon" href="https://github.com/Kipkorir-Gideon"  target="_blank"><i class="bi bi-github p-2"></i></a>
+                                    <a class="social-icon" href="https://twitter.com/gidalios" target="_blank"><i class="bi bi-twitter p-2"></i></a>
+                                    <a class="social-icon" href="mailto:ngetichgideon21@gmail.com" target="_blank"><i class="bi bi-envelope p-2"></i></a>
+                                    <a class="social-icon" href="https://www.linkedin.com/in/ngetich-gideon-218661122/" target="_blank"><i class="bi bi-linkedin p-2"></i></a>
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="image">
+                                <img src="https://avatars.githubusercontent.com/u/87479324?v=4" alt="photo" class="home_image" style="border-radius: 5px;">
                             </div>
                         </div>
                     </div>
                 </div>
-    
-                {% endfor %}
+            </section>
+
+            <div class="container">
+                <hr class="bg-primary">
             </div>
-        </div>
-    </section>
-    
-    
-    <section class="contact my-5" id="Contact">
-        <div class="container">
-            <h3 class="text-center">Contact Me</h3>
-            <div class="message">
-                <form action="" id="contact-form">
-                    <label for="">Name</label>
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your name" required>
-    
-                    <label for="">Subject</label>
-                    <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required>
-    
-                    <label for="">Email</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
-    
-                    <label for="">Message</label>
-                    <textarea name="message" id="" cols="30" rows="5" class="form-control" id="message" placeholder="Write your message here..." required></textarea>
-    
+            
+            
+            <section class="aboutme my-5" id="About">
+                <div class="container">
+                    <h3 class="section-title text-center">About Me</h3>
                     <br>
-                    <input type="submit" id="submit" name="submit" value="Send" style="width:100%; background-color:blue; color:white">
-                </form>
-            </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6 image_about">
+                            <div class="about_img">
+                                <img src="/static/images/undraw_web_developer_re_h7ie.svg" height="80%" width="80%"alt="about">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="main_title text-left">
+                                <h2 class="about_profession">Software Developer</h2>
+                                <p class="about_text">
+                                    Junior level Web Development candidate with less than one year of experience. Skilled in HTML, CSS, JavaScript, Python, and SQL. Proven
+                                    ability to solve technical challenges and develop high-quality solutions. A fast learner with a desire to learn and continually improve. Seeking
+                                    a position as a Full-stack Developer at an innovative software company.
+                                </p>
+                                <a href="#"><span>Download Resume</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section class="more" align="center">
+                <div class="container">
+                    <div class="about-wrapper">
+                        <div class="about-me">
+                            <h4 class="skills-title">More About me</h4>
+                            <p class="skills-text">I build projects to improve on my skills and learn new things.</p>
+                            <p class="skills-text">I take interviews in search for a great team & projects that interest me.</p>
+                            <br>
+                            <h4 class="skills-title">Top Expertise</h4>
+                            <p class="skills-text">Fullstack developer with primary focus on Django and Angular.</p>
+                            <div class="skills" align="center">
+                                <div class="row" align="center" style="width:50%">
+                                    <div class="col">
+                                        <ul>
+                                            <li class="skills-name">Python</li>
+                                            <li class="skills-name">Flask</li>
+                                            <li class="skills-name">Django</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul>
+                                            <li class="skills-name">Javascript</li>
+                                            <li class="skills-name">Angular</li>
+                                            <li class="skills-name">Postgres</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="projects_section py-5" id="Projects">
+                <div class="container">
+                    <h3 class="section-title" style="text-align:center;">Some of my past projects</h3>
+                    <div class="row justify-content-lg-start justify-content-center">
+                        {% for project in projects%}
+                        <div class="col-lg-6 col-md-6">
+                            <div class="card-deck mx-1 my-4">
+                                <a href="" data-toggle="modal" data-target="#project{{ project.id }}">
+                                <img class="card-img-top mb-2" src="{{ project.screenshot.url }}" alt="{{screenshot.title}}" height="400">
+                                </a>
+                            </div>
+                        </div>
+            
+                        <!--modal -->
+                        <div class="modal fade" id="project{{ project.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="card-title" align="center" style="color: rgb(233, 109, 109)">{{project.title|title}}</h4>
+                                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="">
+                                            <img class="card-img-top mb-2" src="{{ project.screenshot.url }}" alt="{{screenshot.title}}">
+                                            <p><em>{{project.description}}</em></p>
+                                            <p class="card-text"><strong>{{project.languages|title}}</strong></p>
+                                            <a class="btn btn-sm btn-outline-info" href="{{ project.site_url }}" style="width: 100%;"> Visit Site</a>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section class="contact my-5" id="Contact">
+                <div class="container">
+                    <h3 class="section-title text-center">Contact Me</h3>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6 contact__info">
+                            <h5 class="contact__subtitle">EMAIL</h5>
+                            <span class="contact__text">ngetichgideon21@gmail.com</span>
+    
+                            <h5 class="contact__subtitle">PHONE</h5>
+                            <span class="contact__text">+254704843484</span>
+    
+                            <h5 class="contact__subtitle">ADDRESS</h5>
+                            <span class="contact__text">Kenya</span>
+                        </div>
+                        <div class="col-md-6 message">
+                            <form action="" id="contact-form">
+                                <label for="">Name</label>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your name" required>
+                
+                                <label for="">Subject</label>
+                                <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required>
+                
+                                <label for="">Email</label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+                
+                                <label for="">Message</label>
+                                <textarea name="message" id="" cols="30" rows="5" class="form-control" id="message" placeholder="Write your message here..." required></textarea>
+                
+                                <br>
+                                <input type="submit" id="submit" name="submit" value="Send" style="width:100%; background-color:blue; color:white">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+
         </div>
-    </section>
-    <br>
-
-</div>
 
 
-{% endblock %}
+        {% endblock %}
     </body>
 </html>
