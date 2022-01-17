@@ -7,7 +7,7 @@
 
         <div class="container-fluid bg-dark home">
 
-            <section class="py-5 home1" id="Home">
+            <section class="py-5 home1 section" id="Home">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-6">
@@ -33,11 +33,11 @@
             </section>
 
             <div class="container">
-                <hr class="bg-primary">
+                <hr class="bg-light">
             </div>
             
             
-            <section class="aboutme my-5" id="About">
+            <section class="aboutme section my-5" id="About">
                 <div class="container">
                     <h3 class="section-title text-center">About Me</h3>
                     <br>
@@ -55,7 +55,7 @@
                                     ability to solve technical challenges and develop high-quality solutions. A fast learner with a desire to learn and continually improve. Seeking
                                     a position as a Full-stack Developer at an innovative software company.
                                 </p>
-                                <a href="#"><span>Download Resume</span></a>
+                                <a class="btn btn-primary" href="{% static 'ngetich.pdf' %}"><span>Download Resume</span></a>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
             </section>
             
             
-            <section class="more" align="center">
+            <section class="more my-5 section" align="center">
                 <div class="container">
                     <div class="about-wrapper">
                         <div class="about-me">
@@ -74,15 +74,15 @@
                             <h4 class="skills-title">Top Expertise</h4>
                             <p class="skills-text">Fullstack developer with primary focus on Django and Angular.</p>
                             <div class="skills" align="center">
-                                <div class="row" align="center" style="width:50%">
-                                    <div class="col">
+                                <div class="row skills-item" align="center">
+                                    <div class="col" style="width:40%">
                                         <ul>
                                             <li class="skills-name">Python</li>
                                             <li class="skills-name">Flask</li>
                                             <li class="skills-name">Django</li>
                                         </ul>
                                     </div>
-                                    <div class="col">
+                                    <div class="col" style="width:40%">
                                         <ul>
                                             <li class="skills-name">Javascript</li>
                                             <li class="skills-name">Angular</li>
@@ -95,8 +95,12 @@
                     </div>
                 </div>
             </section>
+
+            <div class="container">
+                <hr class="bg-light">
+            </div>
             
-            <section class="projects_section py-5" id="Projects">
+            <section class="projects_section section py-5" id="Projects">
                 <div class="container">
                     <h3 class="section-title" style="text-align:center;">Some of my past projects</h3>
                     <div class="row justify-content-lg-start justify-content-center">
@@ -136,9 +140,13 @@
                     </div>
                 </div>
             </section>
+
+            <div class="container">
+                <hr class="bg-light">
+            </div>
             
             
-            <section class="contact my-5" id="Contact">
+            <section class="contact section my-5" id="Contact">
                 <div class="container">
                     <h3 class="section-title text-center">Contact Me</h3>
                     <br>
@@ -168,7 +176,7 @@
                                 <textarea name="message" id="" cols="30" rows="5" class="form-control" id="message" placeholder="Write your message here..." required></textarea>
                 
                                 <br>
-                                <input type="submit" id="submit" name="submit" value="Send" style="width:100%; background-color:blue; color:white">
+                                <input type="submit" id="submit" name="submit" value="Send" style="width:100%; background-color:#5361FF; color:white; border-radius: 5px; height: 40px">
                             </form>
                         </div>
                     </div>
