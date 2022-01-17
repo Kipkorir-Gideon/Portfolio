@@ -72,3 +72,8 @@ sr.reveal('.contact__subtitle', {})
 sr.reveal('.contact__text', {interval: 200})
 sr.reveal('.message', {delay: 400})
 
+
+
+function myFunction() {
+    document.getElementById("contact-form").reset();
+  }
