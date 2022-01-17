@@ -389,7 +389,7 @@ img{
 }
 
 @media screen and (max-width: 320px) {
-    .skills-name {
+    .skill-list {
         width: 100%;
     }
 }
