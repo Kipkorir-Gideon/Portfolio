@@ -60,6 +60,7 @@ form {
 
 .image_about {
     padding: 20px;
+    background-color: #fff;
 }
 
 .about-me {
@@ -235,17 +236,6 @@ img{
     right: 0;
 }
 
-/*Active menu*/
-/* .active::after{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: .18rem;
-    left: 0;
-    top: 2rem;
-    background-color: var(--first-color);
-} */
-
 
 
 /* ===== ABOUT =====*/
@@ -389,7 +379,7 @@ img{
 }
 
 @media screen and (max-width: 320px) {
-    .skill-list {
+    .skills-name {
         width: 100%;
     }
 }
