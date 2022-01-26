@@ -129,6 +129,11 @@
                                         <div class="">
                                             <img class="card-img-top mb-2" src="{{ project.screenshot.url }}" alt="{{screenshot.title}}">
                                             <p><em>{{project.description}}</em></p>
+                                            <ul>
+                                                {% for language in languages %}
+                                                <li>{{language.name}}</li>
+                                                {% endfor %}
+                                            </ul>
                                             <p class="card-text"><strong>{{project.languages|title}}</strong></p>
                                             <a class="btn btn-sm btn-info" href="{{ project.site_url }}" style="width: 100%;"> Visit Site</a>
                                         </div>
