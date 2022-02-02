@@ -14,7 +14,7 @@ html, body {
 }
 
 body * {
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 .home {
@@ -188,7 +188,7 @@ img{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    padding: 60px;
+    padding: 40px;
 }
 
 .about_text{
