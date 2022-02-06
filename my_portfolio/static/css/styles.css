@@ -297,7 +297,8 @@ img{
 
 
 .footer__link:hover{
-    color: var(--first-color);
+    background-color: var(--first-color);
+    color: var(--white-color);
 }
 
 
