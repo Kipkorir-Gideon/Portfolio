@@ -301,6 +301,11 @@ img{
     color: var(--white-color);
 }
 
+.social-icons {
+    padding: 20 0 10 0;
+
+}
+
 
 .social-icons:hover{
     background-color: var(--dark-color);
