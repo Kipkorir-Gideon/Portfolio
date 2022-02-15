@@ -278,6 +278,12 @@ img{
     margin-bottom: var(--mb-2);
 }
 
+.contact-icon {
+    background-color: var(--white-color);
+    color: var(--first-color);
+    border-radius: 50%;
+}
+
 
 
 /* ===== FOOTER=====*/
