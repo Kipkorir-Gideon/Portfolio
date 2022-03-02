@@ -191,6 +191,11 @@ img{
     padding: 40px;
 }
 
+.undraw {
+    width: 25%;
+    border-radius: 50%;
+}
+
 .about_text{
     margin-bottom: var(--mb-4);
 }
