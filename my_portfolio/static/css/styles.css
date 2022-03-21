@@ -192,8 +192,7 @@ img{
 } */
 
 .undraw {
-    width: 25%;
-    border-radius: 50%;
+    margin: auto;
 }
 
 .about_text{
