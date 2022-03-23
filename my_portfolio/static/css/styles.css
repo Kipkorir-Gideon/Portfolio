@@ -311,7 +311,7 @@ img{
 
 
 .footer__link:hover{
-    background-color: var(--first-color);
+    background-color: #0d6efd;
     color: var(--white-color);
 }
 
