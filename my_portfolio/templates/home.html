@@ -1,93 +1,107 @@
 <html>
-    <body>
-        {%extends 'base.html'%}
-        {% load bootstrap4 %}
-        {% load static %}
-        {% block content %}
 
-        <div class="container-fluid bg-dark home">
+<body>
+    {%extends 'base.html'%} 
+    {% load bootstrap4 %} 
+    {% load static %} 
+    {% block content %}
 
-            <section class="py-5 home1 section" id="Home">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <div class="banner_content">
-                                <h3>Hello there!</h3>
-                                <h1 class="text-uppercase">I am Ng'etich Gideon</h1>
-                                <h4 class="text-uppercase">a software engineer</h4>
-                                <div class="social">
-                                    <a class="social-icon" href="https://github.com/Kipkorir-Gideon"  target="_blank"><i class="bi bi-github p-2"></i></a>
-                                    <a class="social-icon" href="https://twitter.com/gidalios" target="_blank"><i class="bi bi-twitter p-2"></i></a>
-                                    <a class="social-icon" href="mailto:ngetichgideon21@gmail.com" target="_blank"><i class="bi bi-envelope p-2"></i></a>
-                                    <a class="social-icon" href="https://www.linkedin.com/in/ngetich-gideon-218661122/" target="_blank"><i class="bi bi-linkedin p-2"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="image">
-                                <img src="https://res.cloudinary.com/drroulnbj/image/upload/v1644915498/Ng_etich-modified_1_vlngek.png" alt="photo" class="home_image" style="border-radius: 5px;">
+    <div class="container-fluid bg-dark home">
+        <section class="py-5 home1 section" id="Home">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="banner_content">
+                            <h3>Hello there!</h3>
+                            <h1 class="text-uppercase">I am Ng'etich Gideon</h1>
+                            <h4 class="text-uppercase">a software engineer</h4>
+                            <div class="social">
+                                <a class="social-icon" href="https://github.com/Kipkorir-Gideon" target="_blank"><i
+                                        class="bi bi-github p-2"></i></a>
+                                <a class="social-icon" href="https://twitter.com/gidalios" target="_blank"><i
+                                        class="bi bi-twitter p-2"></i></a>
+                                <a class="social-icon" href="mailto:ngetichgideon21@gmail.com" target="_blank"><i
+                                        class="bi bi-envelope p-2"></i></a>
+                                <a class="social-icon" href="https://www.linkedin.com/in/ngetich-gideon-218661122/"
+                                    target="_blank"><i class="bi bi-linkedin p-2"></i></a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <div class="container">
-                <hr class="bg-light">
-            </div>
-            
-            
-            <section class="aboutme section my-5" id="About">
-                <div class="container">
-                    <h3 class="section-title text-center">About Me</h3>
-                    <br>
-                    <div class="row align-items-center">
-                        <div class="col-md-6 image_about">
-                            <div class="about_img">
-                                <img class="undraw" src="/static/images/undraw_web_developer_re_h7ie.svg" alt="about">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="main_title text-left">
-                                <h2 class="about_profession">Software Developer</h2>
-                                <p class="about_text">
-                                    Mid-level Web Development, software engineer with 3+ years of experience. Skilled in HTML, CSS, JavaScript, Python, and SQL. Proven
-                                    ability to solve technical challenges and develop high-quality solutions. A fast learner with a desire to learn and continually improve. Seeking
-                                    a position as a Full-stack Developer at an innovative software company.
-                                </p>
-                                <a class="btn btn-primary" href="{% static 'ngetich.pdf' %}"><span>Download Resume</span></a>
-                            </div>
+                    <div class="col-md-6">
+                        <div class="image">
+                            <img src="https://res.cloudinary.com/drroulnbj/image/upload/v1644915498/Ng_etich-modified_1_vlngek.png"
+                                alt="photo" class="home_image" style="border-radius: 5px" />
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <div class="container">
-                <hr class="bg-light">
             </div>
-            
-            
-            <section class="more my-5 section" align="center">
-                <div class="container">
-                    <div class="about-wrapper">
-                        <div class="about-me">
-                            <h4 class="skills-title">More About me</h4>
-                            <p class="skills-text">I build projects to improve on my skills and learn new things.</p>
-                            <p class="skills-text">I take interviews in search for a great team & projects that interest me.</p>
-                            <br>
-                            <h4 class="skills-title">Top Expertise</h4>
-                            <p class="skills-text">Fullstack developer with primary focus on Django and Angular.</p>
-                            <div class="skills">
-                                <center>
+        </section>
+
+        <div class="container">
+            <hr class="bg-light" />
+        </div>
+
+        <section class="aboutme section my-5" id="About">
+            <div class="container">
+                <h3 class="section-title text-center">About Me</h3>
+                <br />
+                <div class="row align-items-center">
+                    <div class="col-md-6 image_about">
+                        <div class="about_img">
+                            <img class="undraw" src="/static/images/undraw_web_developer_re_h7ie.svg" alt="about" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="main_title text-left">
+                            <h2 class="about_profession">Software Developer</h2>
+                            <p class="about_text">
+                                Mid-level Web Development, software engineer with 3+ years of
+                                experience. Skilled in HTML, CSS, JavaScript, Python, and SQL.
+                                Proven ability to solve technical challenges and develop
+                                high-quality solutions. A fast learner with a desire to learn
+                                and continually improve. Seeking a position as a Full-stack
+                                Developer at an innovative software company.
+                            </p>
+                            <a class="btn btn-primary" href="{% static 'Ngetich-Gideon.pdf' %}"><span>Download
+                                    Resume</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <hr class="bg-light" />
+        </div>
+
+        <section class="more my-5 section" align="center">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="about-me">
+                        <h4 class="skills-title">More About me</h4>
+                        <p class="skills-text">
+                            I build projects to improve on my skills and learn new things.
+                        </p>
+                        <p class="skills-text">
+                            I take interviews in search for a great team & projects that
+                            interest me.
+                        </p>
+                        <br />
+                        <h4 class="skills-title">Top Expertise</h4>
+                        <p class="skills-text">
+                            Fullstack developer with primary focus on Django and Angular.
+                        </p>
+                        <div class="skills">
+                            <center>
                                 <div class="row skills-item">
-                                    <div class="col skill-list" style="width:40%">
+                                    <div class="col skill-list" style="width: 40%">
                                         <ul>
                                             <li class="skills-name">Python</li>
                                             <li class="skills-name">Flask</li>
                                             <li class="skills-name">Django</li>
                                         </ul>
                                     </div>
-                                    <div class="col" style="width:40%">
+                                    <div class="col" style="width: 40%">
                                         <ul>
                                             <li class="skills-name">Javascript</li>
                                             <li class="skills-name">Angular</li>
@@ -95,120 +109,206 @@
                                         </ul>
                                     </div>
                                 </div>
-                                </center>
-                            </div>
+                            </center>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <div class="container">
-                <hr class="bg-light">
             </div>
-            
-            <section class="projects_section section py-5" id="Projects">
-                <div class="container">
-                    <h3 class="section-title" style="text-align:center;">Some of my past projects</h3>
-                    <div class="row justify-content-start">
-                        {% for project in projects%}
-                        <div class="col-lg-4 col-md-6 project">
-                            <div class="card-deck mx-1 my-4">
-                                <a href="" data-toggle="modal" data-target="#project{{ project.id }}">
-                                <img class="card-img-top mb-2" src="{{ project.screenshot.url }}" alt="{{screenshot.title}}" style= "height:250px">
-                                </a>
-                            </div>
+        </section>
+
+        <div class="container">
+            <hr class="bg-light" />
+        </div>
+
+        <section class="projects_section section py-5" id="Projects">
+            <div class="container">
+                <h3 class="section-title" style="text-align: center">
+                    Some of my past projects
+                </h3>
+                <div class="row justify-content-start">
+                    {% for project in projects%}
+                    <div class="col-lg-4 col-md-6 project">
+                        <div class="card-deck mx-1 my-4">
+                            <a href="" data-toggle="modal" data-target="#project{{ project.id }}">
+                                <img class="card-img-top mb-2" src="{{ project.screenshot.url }}"
+                                    alt="{{screenshot.title}}" style="height: 250px" />
+                            </a>
                         </div>
-            
-                        <!--modal -->
-                        <div class="modal fade" id="project{{ project.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="card-title" align="center" style="color: rgb(233, 109, 109)">{{project.title|title}}</h4>
-                                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <!--modal -->
+                    <div class="modal fade" id="project{{ project.id }}" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="card-title" align="center" style="color: rgb(233, 109, 109)">
+                                        {{project.title|title}}
+                                    </h4>
+                                    <button type="button" class="btn-close" data-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="">
+                                        <img class="card-img-top mb-2" src="{{ project.screenshot.url }}"
+                                            alt="{{screenshot.title}}" />
+                                        <p><em>{{project.description}}</em></p>
+                                        <ul>
+                                            {% for language in languages %}
+                                            <li>{{language.name}}</li>
+                                            {% endfor %}
+                                        </ul>
+                                        <p class="card-text">
+                                            <strong>{{project.languages|title}}</strong>
+                                        </p>
+                                        <a class="btn btn-sm btn-info" href="{{ project.site_url }}"
+                                            style="width: 100%">
+                                            Visit Site</a>
                                     </div>
-                                    <div class="modal-body">
-                                        <div class="">
-                                            <img class="card-img-top mb-2" src="{{ project.screenshot.url }}" alt="{{screenshot.title}}">
-                                            <p><em>{{project.description}}</em></p>
-                                            <ul>
-                                                {% for language in languages %}
-                                                <li>{{language.name}}</li>
-                                                {% endfor %}
-                                            </ul>
-                                            <p class="card-text"><strong>{{project.languages|title}}</strong></p>
-                                            <a class="btn btn-sm btn-info" href="{{ project.site_url }}" style="width: 100%;"> Visit Site</a>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        Close
+                                    </button>
                                 </div>
                             </div>
                         </div>
-            
-                        {% endfor %}
                     </div>
-                </div>
-            </section>
 
-            <div class="container">
-                <hr class="bg-light">
+                    {% endfor %}
+                </div>
             </div>
-            
-            
-            <section class="contact section my-5" id="Contact">
-                <div class="container">
-                    <h3 class="section-title text-center">Contact Me</h3>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-6 mb-5 pl-5 contact__info">
-                            <center>
-                            <div class="email py-2">
-                                <i class="bi bi-envelope fa-2x pr-2 contact-icon"></i>
-                                <br>
-                                <span class="contact__text">ngetichgideon21@gmail.com</span>
-                            </div>
-                            
-                            <div class="phone py-2">
-                                <i class="bi bi-telephone fa-2x pr-2 contact-icon"></i>
-                                <br>
-                                <span class="contact__text">+254704843484</span>
-                            </div>
-                            
-                            <div class="address py-2">
-                                <i class="bi bi-geo-alt fa-2x pr-2 contact-icon"></i>
-                                <br>
-                                <span class="contact__text">Kenya</span>
-                            </div>
-                            </center>
-                        </div>
-                        <div class="col-md-6 message">
-                            <form action="mailto:ngetichgideon21@gmail.com" method="post" enctype="text/plain" id="contact-form">
-                                <label for="">Name</label>
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your name" required>
-                
-                                <label for="">Subject</label>
-                                <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required>
-                
-                                <label for="">Email</label>
-                                <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
-                
-                                <label for="">Message</label>
-                                <textarea name="message" id="" cols="30" rows="5" class="form-control" id="message" placeholder="Write your message here..." required></textarea>
-                
-                                <br>
-                                <input type="submit" id="submit" name="submit" onclick="myFunction()" value="Send" style="width:100%; background-color:#5361FF; color:white; border-radius: 5px; height: 40px">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <br>
+        </section>
 
+        <div class="container">
+            <hr class="bg-light" />
         </div>
 
+        <section class="contact section my-5" id="Contact">
+            <div class="container">
+                <h3 class="section-title text-center">Contact Me</h3>
+                <br />
+                <div class="row">
+                    <div class="col-md-6 mb-5 pl-5 contact__info">
+                        <center>
+                            <div class="email py-2">
+                                <i class="bi bi-envelope fa-2x pr-2 contact-icon"></i>
+                                <br />
+                                <span class="contact__text">ngetichgideon21@gmail.com</span>
+                            </div>
 
-        {% endblock %}
-    </body>
+                            <div class="phone py-2">
+                                <i class="bi bi-telephone fa-2x pr-2 contact-icon"></i>
+                                <br />
+                                <span class="contact__text">+254704843484</span>
+                            </div>
+
+                            <div class="address py-2">
+                                <i class="bi bi-geo-alt fa-2x pr-2 contact-icon"></i>
+                                <br />
+                                <span class="contact__text">Kenya</span>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="col-md-6 message">
+                        <form action="mailto:ngetichgideon21@gmail.com" method="post" enctype="text/plain"
+                            id="contact-form">
+                            <label for="">Name</label>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your name"
+                                required />
+
+                            <label for="">Subject</label>
+                            <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject"
+                                required />
+
+                            <label for="">Email</label>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Email"
+                                required />
+
+                            <label for="">Message</label>
+                            <textarea name="message" id="" cols="30" rows="5" class="form-control" id="message"
+                                placeholder="Write your message here..." required></textarea>
+
+                            <br />
+                            <input type="submit" id="submit" name="submit" onclick="myFunction()" value="Send" style="
+                    width: 100%;
+                    background-color: #5361ff;
+                    color: white;
+                    border-radius: 5px;
+                    height: 40px;
+                  " />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br />
+
+        <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    {% for project in projects%}
+                    <a href="" data-toggle="modal" data-target="#project{{ project.id }}">
+                        <img class="card-img-top mb-2" src="{{ project.screenshot.url }}"
+                            alt="{{screenshot.title}}" style="height: 250px" />
+                    </a> -->
+
+                    <!--modal -->
+                    <!-- <div class="modal fade" id="project{{ project.id }}" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="card-title" align="center" style="color: rgb(233, 109, 109)">
+                                        {{project.title|title}}
+                                    </h4>
+                                    <button type="button" class="btn-close" data-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="">
+                                        <img class="card-img-top mb-2" src="{{ project.screenshot.url }}"
+                                            alt="{{screenshot.title}}" />
+                                        <p><em>{{project.description}}</em></p>
+                                        <ul>
+                                            {% for language in languages %}
+                                            <li>{{language.name}}</li>
+                                            {% endfor %}
+                                        </ul>
+                                        <p class="card-text">
+                                            <strong>{{project.languages|title}}</strong>
+                                        </p>
+                                        <a class="btn btn-sm btn-info" href="{{ project.site_url }}"
+                                            style="width: 100%">
+                                            Visit Site</a>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% endfor %}
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div> -->
+    </div>
+
+    {% endblock %}
+</body>
+
 </html>
